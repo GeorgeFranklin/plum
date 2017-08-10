@@ -1,6 +1,7 @@
-package com.blackunion.george.plum.controller;
+package com.blackunion.george.plum.common.app;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Controller;
  * Created by George on 2017-08-08.
  */
 @Controller
+@EnableAutoConfiguration
 public class App {
 
     public static void main(String[] args) throws Exception {

@@ -2,6 +2,7 @@ package com.blackunion.george.plum.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 控制类基类。
@@ -14,9 +15,10 @@ public class BaseController {
      * 进入首页
      * @return String 页面名称
      */
-    @RequestMapping(value = "/")
+    @RequestMapping("/")
+    @ResponseBody
     public String index() {
-        return "redirect:/index";
+        return "Hello World";
     }
 
 
