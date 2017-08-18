@@ -5,6 +5,8 @@ import org.apache.commons.codec.binary.Base64;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.UnsupportedCharsetException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * 加密工具类。用于加密和解密。
@@ -15,6 +17,16 @@ public class EncryptionUtil {
     /** 加密算法名称 */
     public static final String MD5 = "MD5";
     private static final String SHA1 = "SHA-1";
+
+    private static String encrypt(String encryptType,String encryptStr){
+        String result = "";
+        try {
+            MessageDigest digest = MessageDigest.getInstance(encryptType);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
 
     /**

@@ -1,0 +1,219 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidConfig",
+      "name": "druid.login",
+      "sourceMethod": "druidStatViewServlet()",
+      "type": "org.springframework.boot.web.servlet.ServletRegistrationBean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DataSourceConfig",
+      "name": "druid:",
+      "sourceMethod": "initDruidProperties()",
+      "type": "com.blackunion.george.plum.common.database.DruidDataSourceProperties"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DataSourceConfig",
+      "name": "spring:datasource",
+      "sourceMethod": "dataSource(com.blackunion.george.plum.common.database.DruidConfig,com.blackunion.george.plum.common.database.DruidDataSourceProperties)",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "org.springframework.boot.web.servlet.ServletRegistrationBean",
+      "name": "druid.login.async-supported",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "org.springframework.boot.web.servlet.ServletRegistrationBean",
+      "name": "druid.login.enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "org.springframework.boot.web.servlet.ServletRegistrationBean",
+      "name": "druid.login.init-parameters",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    },
+    {
+      "sourceType": "org.springframework.boot.web.servlet.ServletRegistrationBean",
+      "name": "druid.login.multipart-config",
+      "type": "javax.servlet.MultipartConfigElement"
+    },
+    {
+      "sourceType": "org.springframework.boot.web.servlet.ServletRegistrationBean",
+      "name": "druid.login.order",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "org.springframework.boot.web.servlet.ServletRegistrationBean",
+      "name": "druid.login.url-mappings",
+      "type": "java.util.Collection<java.lang.String>"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.clear-filters-enable",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.connection-properties",
+      "type": "java.util.Properties"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.fail-fast",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.filters",
+      "description": "配置监控统计拦截的filters",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": 5,
+      "name": "druid:.initial-size",
+      "description": "连接池初始、最小空闲、最大连接数",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": 20,
+      "name": "druid:.max-active",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.max-evictable-idle-time-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": 20,
+      "name": "druid:.max-pool-prepared-statement-per-connection-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.max-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": 60000,
+      "name": "druid:.max-wait",
+      "description": "获取连接等待超时的时间",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.max-wait-thread-count",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": 300000,
+      "name": "druid:.min-evictable-idle-time-millis",
+      "description": "连接在池中最小生存的时间，单位是毫秒",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": 5,
+      "name": "druid:.min-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.not-full-timeout-retry-count",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.phy-timeout-millis",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": true,
+      "name": "druid:.pool-prepared-statements",
+      "description": "打开PSCache，并且指定每个连接上PSCache的大小",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.port",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.reset-stat-enable",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.test-on-borrow",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.test-on-return",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": true,
+      "name": "druid:.test-while-idle",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": 60000,
+      "name": "druid:.time-between-eviction-runs-millis",
+      "description": "间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.time-between-log-stats-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.url",
+      "description": "连接信息",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.use-global-data-source-stat",
+      "description": "是否合并多个DruidDataSource的监控数据",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "name": "druid:.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.blackunion.george.plum.common.database.DruidDataSourceProperties",
+      "defaultValue": "SELECT 1",
+      "name": "druid:.validation-query",
+      "description": "连接在池验证sql",
+      "type": "java.lang.String"
+    }
+  ]
+}
